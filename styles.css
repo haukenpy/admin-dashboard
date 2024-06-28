@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+
+    height: 98vh;
+}
+
+.navbar {
+    grid-row: 1 / 3;
+    background-color: red;
+}
+
+.header {
+    background-color: orange;
+}
+
+.project-container {
+    grid-row: 2 / 3;
+    background-color: blue;
+}
