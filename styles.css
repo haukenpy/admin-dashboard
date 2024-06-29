@@ -23,6 +23,8 @@
 
 body {
     background-color: black;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -32,6 +34,7 @@ body {
     grid-template-rows: 1fr 5fr;
 
     height: 98vh;
+    width: 80vw;
 }
 
 .white-svg {
@@ -100,14 +103,31 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+
+    padding: 2vh 3vw 2vh 3vw;
 }
 
 .header img {
     height: var(--small-icon);
 }
 
+.top-icons {
+    justify-self: end;
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2vw;
+}
+
+.top-icons > p {
+    font-size: var(--small-text);
+    font-weight: 700;
+}
+
 .button-container {
+    justify-self: end;
     display: flex;
+    align-items: center;
     gap: 2vw;
 }
 
