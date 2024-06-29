@@ -112,6 +112,31 @@ body {
     height: var(--small-icon);
 }
 
+/* Search bar */
+
+.search-bar{
+    display: flex;
+    gap: 1vw;
+}
+
+.search-bar > input {
+    width: 90%;
+    height: 3vh;
+
+    border-radius: 25px;
+
+    background-color: rgb(230, 230, 230);
+    border: none;
+
+    padding-left: 1vw;
+}
+
+.search-bar > input:focus {
+    outline: none;
+}
+
+/* Welcome message */
+
 .welcome-message {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(4vw, 2fr));
@@ -130,6 +155,8 @@ body {
     font-size: var(--medium-text);
 }
 
+/* Header icons */
+
 .header-icon-container > img {
     height: var(--large-icon);
 }
@@ -146,6 +173,8 @@ body {
     font-size: var(--small-text);
     font-weight: 700;
 }
+
+/* Buttons */
 
 .button-container {
     justify-self: end;
