@@ -7,8 +7,15 @@
 
 :root {
  font-size: 16px;
+
 --small-text: clamp(0.5rem, calc(1rem + 0.4vh), 1.5rem);
 --large-text: clamp(1rem, calc(1rem + 2vh), 2rem);
+
+--small-icon: 3vh;
+--large-icon: 5vh;
+
+--bg-white: white;
+
 }
 
 /* Element declarations */
@@ -84,10 +91,21 @@ body {
 }
 
 /* Navbar styling end */
+/* Header styling start */
 
 .header {
-    background-color: orange;
+    background-color: var(--bg-white);
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+
+.header img {
+    height: var(--small-icon);
+}
+
+/* Header styling end */
 
 .project-container {
     grid-row: 2 / 3;
