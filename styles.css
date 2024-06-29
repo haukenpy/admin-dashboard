@@ -101,6 +101,8 @@ body {
 
 .header {
     background-color: var(--bg-white);
+    position: relative;
+    z-index: 1;
 
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -108,7 +110,7 @@ body {
 
     padding: 2vh 3vw 2vh 3vw;
 
-    box-shadow: 2px 2px 3px lightgray;
+    box-shadow: 3px 3px 3px lightgray;
 }
 
 .header img {
@@ -201,7 +203,99 @@ body {
 
 /* Header styling end */
 
-.project-container {
+.projects {
+    background-color: var(--bg-gray);
+}
+
+.card-container {
     grid-row: 2 / 3;
     background-color: var(--bg-gray);
+    position: relative;
+    display: grid;
+    padding: 2vh 2vw;
+    gap: 2vh 1vw;
+    grid-template-areas:
+    "hdr ... annt"
+    "one two ann"
+    "one two ann"
+    "three four ann" 
+    "three four trd"
+    "five six trd"
+    "five six trd";
+}
+
+.card-container h1 {
+    font-size: var(--medium-text);
+}
+
+.card {
+    z-index: 1;
+    border-radius: 10px;
+    background-color: white;
+
+    box-shadow: 3px 3px 5px lightgray;
+    padding: 3vh 1vw;
+}
+
+.card > h1 {
+    font-size: var(--small-text);
+}
+
+.card-container > .card {
+    border-left: 0.5vw solid orange;
+}
+
+.trending-card {
+    display: grid;
+    grid-template-columns: 1.5vw 1fr;
+    gap: 3%;
+    padding-bottom: 3%;
+}
+
+.trending img {
+    height: var(--small-icon);
+}
+
+/* grid areas */
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+.announcements {
+    grid-area: ann;
+}
+
+.trending {
+    grid-area: trd;
+}
+
+.project-text {
+    grid-area: hdr;
+    align-self: end;
+}
+
+.announcement-text {
+    grid-area: annt;
+    align-self: end;
 }
