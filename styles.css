@@ -17,6 +17,7 @@
 
 --bg-white: white;
 --bg-blue: #1679AB;
+--bg-gray: rgb(230, 230, 230);
 
 }
 
@@ -88,7 +89,7 @@ body {
 }
 
 .text-container {
-    margin-right: 1vw;
+    margin-right: 3vw;
 }
 
 .icon-container {
@@ -106,6 +107,8 @@ body {
     grid-template-rows: 1fr 1fr;
 
     padding: 2vh 3vw 2vh 3vw;
+
+    box-shadow: 2px 2px 3px lightgray;
 }
 
 .header img {
@@ -125,7 +128,7 @@ body {
 
     border-radius: 25px;
 
-    background-color: rgb(230, 230, 230);
+    background-color: var(--bg-gray);
     border: none;
 
     padding-left: 1vw;
@@ -200,5 +203,5 @@ body {
 
 .project-container {
     grid-row: 2 / 3;
-    background-color: blue;
+    background-color: var(--bg-gray);
 }
