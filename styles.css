@@ -29,6 +29,11 @@ body {
     justify-content: center;
 }
 
+hr {
+    width: 90%;
+    margin: 1vh 1vw;
+}
+
 .container {
 
     display: grid;
@@ -214,6 +219,7 @@ body {
     display: grid;
     padding: 2vh 2vw;
     gap: 2vh 1vw;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
     "hdr ... annt"
     "one two ann"
@@ -243,6 +249,10 @@ body {
 
 .card-container > .card {
     border-left: 0.5vw solid orange;
+}
+
+.announcement-card div {
+    padding: 0.5vh 1vw;
 }
 
 .trending-card {
