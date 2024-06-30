@@ -12,7 +12,7 @@
 --medium-text: clamp(1rem, calc(1rem + 1vh), 1.8rem);
 --large-text: clamp(1rem, calc(1rem + 2vh), 2rem);
 
---small-icon: 3vh;
+--small-icon: 2.5vh;
 --large-icon: 5vh;
 
 --bg-white: white;
@@ -40,7 +40,7 @@ hr {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 
-    height: 98vh;
+    height: 100vh;
     width: 80vw;
 }
 
@@ -243,12 +243,24 @@ hr {
     padding: 3vh 1vw;
 }
 
+.card-icon-container img {
+    height: var(--small-icon);
+}
+
 .card > h1 {
     font-size: var(--small-text);
 }
 
 .card-container > .card {
+    display: grid;
     border-left: 0.5vw solid orange;
+}
+
+.card-icon-container {
+    display: flex;
+    gap: 0.8vw;
+    justify-self: end;
+    align-self: end;
 }
 
 .announcement-card div {
